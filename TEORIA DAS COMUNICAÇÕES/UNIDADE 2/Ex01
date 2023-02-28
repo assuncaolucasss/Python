@@ -1,0 +1,5 @@
+Este código irá gravar o áudio da entrada de áudio do computador por 5 segundos e armazená-lo em uma matriz Numpy. O áudio é armazenado no formato de inteiros assinados de 16 bits e salvo em um arquivo chamado rec.npy. A biblioteca Pyaudio fornece uma maneira fácil de acessar a entrada e saída de áudio do computador, e a biblioteca Numpy é usada para armazenar os dados de áudio em um formato numérico para processamento.
+
+Neste exemplo, a gravação de áudio começa inicializando um objeto Pyaudio e abrindo um fluxo para gravação. O método stream.read é chamado repetidamente para gravar áudio em blocos de tamanho. O áudio gravado é armazenado em uma lista de matrizes Numpy e, após a conclusão da gravação, a lista é concatenada em uma única matriz Numpy. Finalmente, os dados de áudio são salvos em um arquivo usando o método np.save.
+
+Você pode modificar o código conforme necessário para alterar o tempo de gravação, o tamanho do bloco, a taxa de amostragem e o número de canais ou para executar processamento adicional no áudio gravado.

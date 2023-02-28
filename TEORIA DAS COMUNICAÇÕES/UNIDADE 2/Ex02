@@ -1,0 +1,11 @@
+Explicação:
+
+A função remove_pilot recebe como entrada um sinal e o comprimento do piloto.
+
+O piloto é estimado calculando a autocorrelação do sinal usando a função np.correlate. O argumento mode="same" calcula a autocorrelação no mesmo intervalo do sinal de entrada. A autocorrelação resultante é então cortada no comprimento do piloto usando fatiamento.
+
+O piloto estimado é então normalizado dividindo-o pelo seu valor máximo.
+
+Finalmente, o piloto estimado é removido do sinal subtraindo-o elemento a elemento.
+
+O exemplo de uso da função demonstra como usar a função remove_pilot em um sinal de amostra e como acessar o sinal resultante sem o piloto

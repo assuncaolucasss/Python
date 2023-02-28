@@ -1,0 +1,11 @@
+Explicação:
+
+A função estimate_pitch recebe como entrada um sinal de áudio e sua taxa de amostragem.
+
+A autocorrelação do sinal de áudio é calculada usando a função np.correlate, com o argumento mode="full" para calcular a autocorrelação em todo o intervalo.
+
+O primeiro máximo local à direita do centro da autocorrelação é encontrado usando np.argmax. O índice do máximo é então usado para estimar o tom dividindo a taxa de amostragem pelo intervalo de tempo correspondente.
+
+O exemplo de uso da função demonstra como usar a função estimate_pitch em um sinal de áudio de amostra e como acessar a estimativa de pitch resultante.
+
+O gráfico no final mostra o sinal de áudio e sua autocorrelação, para inspeção visual
